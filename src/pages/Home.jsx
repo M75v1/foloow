@@ -19,13 +19,13 @@ export default function Home() {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link 
-              to="/#/order" 
+              to="/order" 
               className="bg-white text-primary font-bold px-10 py-4 rounded-xl hover:opacity-90 transition transform hover:scale-105 flex items-center gap-2 neon-border shadow-lg"
             >
               اطلب الآن <ArrowRight />
             </Link>
             <Link 
-              to="/#/products" 
+              to="/products" 
               className="border-2 border-white px-10 py-4 rounded-xl hover:bg-white/10 transition transform hover:scale-105 font-bold"
             >
               عرض المنتجات
