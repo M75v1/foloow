@@ -6,27 +6,27 @@ export default function Home() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary to-secondary text-white py-20 px-4 rounded-lg overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="neon-glow absolute top-10 left-10"></div>
-          <div className="neon-glow absolute bottom-10 right-10"></div>
+      <section className="relative bg-gradient-to-r from-primary via-secondary to-primary text-white py-24 px-4 rounded-2xl overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="neon-glow absolute top-10 left-10 w-32 h-32 rounded-full blur-3xl"></div>
+          <div className="neon-glow absolute bottom-10 right-10 w-40 h-40 rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">🚀 ارفع متابعيك الآن!</h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
+          <h1 className="text-6xl md:text-7xl font-display font-bold mb-6 drop-shadow-lg">🚀 ارفع متابعيك الآن!</h1>
+          <p className="text-xl md:text-2xl mb-10 opacity-95 drop-shadow-md">
             أسهل وأسرع طريقة لزيادة متابعي انستغرام بجودة عالية وأسعار منخفضة
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link 
-              to="/order" 
-              className="bg-white text-primary font-bold px-8 py-3 rounded-lg hover:opacity-90 transition flex items-center gap-2 neon-border"
+              to="/#/order" 
+              className="bg-white text-primary font-bold px-10 py-4 rounded-xl hover:opacity-90 transition transform hover:scale-105 flex items-center gap-2 neon-border shadow-lg"
             >
               اطلب الآن <ArrowRight />
             </Link>
             <Link 
-              to="/products" 
-              className="border-2 border-white px-8 py-3 rounded-lg hover:bg-white/10 transition"
+              to="/#/products" 
+              className="border-2 border-white px-10 py-4 rounded-xl hover:bg-white/10 transition transform hover:scale-105 font-bold"
             >
               عرض المنتجات
             </Link>
@@ -36,25 +36,25 @@ export default function Home() {
 
       {/* Features */}
       <section className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-display font-bold text-center mb-12">لماذا نحن؟</h2>
+        <h2 className="text-5xl font-display font-bold text-center mb-16">لماذا نحن؟</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-card p-6 rounded-lg border border-border/50 neon-glow hover:border-primary/50 transition">
-            <Zap className="text-primary mb-4" size={32} />
-            <h3 className="text-xl font-bold mb-2">سريع جداً</h3>
-            <p className="text-muted-foreground">تسليم فوري للمتابعين بدون انتظار طويل</p>
+          <div className="bg-card p-8 rounded-xl border-2 border-primary/30 neon-glow hover:border-primary/60 transition transform hover:-translate-y-2">
+            <Zap className="text-primary mb-4" size={40} />
+            <h3 className="text-2xl font-bold mb-3">سريع جداً</h3>
+            <p className="text-muted-foreground text-lg">تسليم فوري للمتابعين بدون انتظار طويل</p>
           </div>
 
-          <div className="bg-card p-6 rounded-lg border border-border/50 neon-glow hover:border-primary/50 transition">
-            <Shield className="text-primary mb-4" size={32} />
-            <h3 className="text-xl font-bold mb-2">آمن 100%</h3>
-            <p className="text-muted-foreground">حسابك آمن معنا، لا تقلق من الحظر</p>
+          <div className="bg-card p-8 rounded-xl border-2 border-secondary/30 neon-glow hover:border-secondary/60 transition transform hover:-translate-y-2">
+            <Shield className="text-secondary mb-4" size={40} />
+            <h3 className="text-2xl font-bold mb-3">آمن 100%</h3>
+            <p className="text-muted-foreground text-lg">حسابك آمن معنا، لا تقلق من الحظر</p>
           </div>
 
-          <div className="bg-card p-6 rounded-lg border border-border/50 neon-glow hover:border-primary/50 transition">
-            <Rocket className="text-primary mb-4" size={32} />
-            <h3 className="text-xl font-bold mb-2">أسعار منخفضة</h3>
-            <p className="text-muted-foreground">أفضل الأسعار في السوق المصرية والخليجية</p>
+          <div className="bg-card p-8 rounded-xl border-2 border-primary/30 neon-glow hover:border-primary/60 transition transform hover:-translate-y-2">
+            <Rocket className="text-primary mb-4" size={40} />
+            <h3 className="text-2xl font-bold mb-3">أسعار منخفضة</h3>
+            <p className="text-muted-foreground text-lg">أفضل الأسعار في السوق المصرية والخليجية</p>
           </div>
         </div>
       </section>
