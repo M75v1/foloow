@@ -22,68 +22,68 @@ export default function Products() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">🎁 عروضنا الرائعة</h1>
-        <p className="text-lg text-muted-foreground">اختر الحزمة المناسبة لك وابدأ الآن</p>
+      <div className="text-center mb-16">
+        <h1 className="text-5xl md:text-6xl font-display font-bold mb-4">🎁 عروضنا الرائعة</h1>
+        <p className="text-xl text-muted-foreground">اختر الحزمة المناسبة لك وابدأ الآن - أفضل أسعار مضمونة</p>
       </div>
 
       {/* Filters */}
-      <div className="flex justify-center gap-4 mb-12 flex-wrap">
+      <div className="flex justify-center gap-4 mb-16 flex-wrap">
         <button 
           onClick={() => setSelectedFilter('all')}
-          className={`px-6 py-2 rounded-lg transition ${selectedFilter === 'all' ? 'bg-primary text-primary-foreground' : 'bg-card border border-border/50 hover:border-primary/50'}`}
+          className={`px-8 py-3 rounded-xl transition font-bold transform hover:scale-105 ${selectedFilter === 'all' ? 'bg-primary text-primary-foreground shadow-lg neon-glow' : 'bg-card border-2 border-primary/20 hover:border-primary/60'}`}
         >
           جميع العروض
         </button>
         <button 
           onClick={() => setSelectedFilter('cheap')}
-          className={`px-6 py-2 rounded-lg transition ${selectedFilter === 'cheap' ? 'bg-primary text-primary-foreground' : 'bg-card border border-border/50 hover:border-primary/50'}`}
+          className={`px-8 py-3 rounded-xl transition font-bold transform hover:scale-105 ${selectedFilter === 'cheap' ? 'bg-primary text-primary-foreground shadow-lg neon-glow' : 'bg-card border-2 border-primary/20 hover:border-primary/60'}`}
         >
-          العروض الاقتصادية
+          💰 الاقتصادية
         </button>
         <button 
           onClick={() => setSelectedFilter('premium')}
-          className={`px-6 py-2 rounded-lg transition ${selectedFilter === 'premium' ? 'bg-primary text-primary-foreground' : 'bg-card border border-border/50 hover:border-primary/50'}`}
+          className={`px-8 py-3 rounded-xl transition font-bold transform hover:scale-105 ${selectedFilter === 'premium' ? 'bg-primary text-primary-foreground shadow-lg neon-glow' : 'bg-card border-2 border-primary/20 hover:border-primary/60'}`}
         >
-          العروض الممتازة
+          ⭐ الممتازة
         </button>
       </div>
 
       {/* Products Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {filteredPackages.map((pkg) => (
           <div 
             key={pkg.id} 
-            className="bg-card border-2 border-border/50 hover:border-primary/50 rounded-lg p-6 text-center neon-glow transition hover:shadow-primary/30 hover:shadow-lg"
+            className="bg-card border-2 border-primary/30 hover:border-primary/80 rounded-2xl p-8 text-center neon-glow transition transform hover:-translate-y-3 hover:shadow-2xl"
           >
             {/* Badge */}
             {pkg.followers >= 10000 && (
-              <div className="inline-block bg-secondary text-secondary-foreground text-xs px-3 py-1 rounded-full mb-4">
+              <div className="inline-block bg-gradient-to-r from-secondary to-primary text-white text-xs px-4 py-2 rounded-full mb-6 font-bold">
                 ⭐ عرض شهير
               </div>
             )}
 
-            <div className="text-5xl font-bold text-primary mb-2">{pkg.followers.toLocaleString('ar-SA')}</div>
-            <p className="text-muted-foreground mb-6">متابع</p>
+            <div className="text-6xl font-bold text-primary mb-3 drop-shadow-lg">{pkg.followers.toLocaleString('ar-SA')}</div>
+            <p className="text-muted-foreground mb-8 text-lg font-medium">متابع</p>
 
-            <div className="bg-primary/10 rounded-lg p-4 mb-6">
-              <div className="text-4xl font-bold text-primary mb-1">{pkg.price} د.م</div>
-              <div className="text-sm text-muted-foreground">السعر الكلي</div>
+            <div className="bg-gradient-to-br from-primary/20 to-secondary/10 rounded-xl p-5 mb-8 border border-primary/20">
+              <div className="text-5xl font-bold text-primary mb-2">{pkg.price}</div>
+              <div className="text-muted-foreground text-sm">د.م</div>
             </div>
 
-            <div className="text-sm text-muted-foreground mb-6">
-              📅 التسليم خلال {pkg.durationDays} يوم
+            <div className="text-sm text-muted-foreground mb-8 bg-card/50 p-3 rounded-lg border border-primary/10">
+              ⏱️ <span className="font-medium">التسليم خلال</span> {pkg.durationDays} يوم
             </div>
 
-            <div className="space-y-2 mb-6 text-sm text-left">
-              <div className="flex items-center gap-2">✅ متابعين حقيقيين</div>
-              <div className="flex items-center gap-2">✅ آمن 100%</div>
-              <div className="flex items-center gap-2">✅ بدون كلمة مرور</div>
-              <div className="flex items-center gap-2">✅ ضمان استرجاع</div>
+            <div className="space-y-2 mb-8 text-sm text-right bg-card/50 p-4 rounded-lg border border-primary/10">
+              <div className="flex items-center gap-2 text-primary font-medium">✅ متابعين حقيقيين</div>
+              <div className="flex items-center gap-2 text-primary font-medium">✅ آمن 100%</div>
+              <div className="flex items-center gap-2 text-primary font-medium">✅ بدون كلمة مرور</div>
+              <div className="flex items-center gap-2 text-primary font-medium">✅ ضمان استرجاع</div>
             </div>
 
-            <button className="w-full bg-primary text-primary-foreground font-bold py-3 rounded-lg hover:opacity-90 transition neon-border">
-              اطلب الآن
+            <button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground font-bold py-4 rounded-xl hover:shadow-lg transform hover:scale-105 transition neon-border">
+              اطلب الآن 🚀
             </button>
           </div>
         ))}

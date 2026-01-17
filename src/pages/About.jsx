@@ -4,13 +4,13 @@ import { CheckCircle, Shield, Zap } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-20">
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-4">
-        <div className="bg-gradient-to-r from-primary/20 to-secondary/20 border-l-4 border-primary p-12 rounded-lg">
-          <h1 className="text-5xl font-display font-bold mb-6">🎯 عن InstaBoosters</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            نحن متخصصون في توفير خدمات احترافية وآمنة لزيادة متابعي انستغرام. منذ التأسيس، خدمنا آلاف العملاء الراضين حول العالم.
+        <div className="bg-gradient-to-r from-primary/30 to-secondary/30 border-l-4 border-primary p-12 rounded-2xl neon-glow">
+          <h1 className="text-6xl font-display font-bold mb-6">🎯 عن InstaBoosters</h1>
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            🌟 نحن متخصصون في توفير خدمات احترافية وآمنة لزيادة متابعي انستغرام. منذ التأسيس، خدمنا آلاف العملاء الراضين حول العالم بجودة عالية وأسعار منخفضة.
           </p>
         </div>
       </section>
@@ -18,17 +18,17 @@ export default function About() {
       {/* Mission & Vision */}
       <section className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-card p-8 rounded-lg border-l-4 border-primary">
-            <h2 className="text-2xl font-bold mb-4">🎯 رسالتنا</h2>
-            <p className="text-muted-foreground">
-              تقديم خدمات عالية الجودة وموثوقة لمساعدة الأفراد والعلامات التجارية على تطوير وجودهم على انستغرام بطريقة آمنة وقانونية.
+          <div className="bg-card p-10 rounded-2xl border-l-4 border-primary neon-glow">
+            <h2 className="text-3xl font-bold mb-6">🎯 رسالتنا</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              تقديم خدمات عالية الجودة وموثوقة لمساعدة الأفراد والعلامات التجارية على تطوير وجودهم على انستغرام بطريقة آمنة وقانونية وشفافة.
             </p>
           </div>
           
-          <div className="bg-card p-8 rounded-lg border-l-4 border-secondary">
-            <h2 className="text-2xl font-bold mb-4">🚀 رؤيتنا</h2>
-            <p className="text-muted-foreground">
-              أن نصبح الخيار الأول والأموثق للعملاء في تحقيق نموهم على وسائل التواصل الاجتماعي من خلال الخدمات المبتكرة والدعم الاستثنائي.
+          <div className="bg-card p-10 rounded-2xl border-l-4 border-secondary neon-glow">
+            <h2 className="text-3xl font-bold mb-6">🚀 رؤيتنا</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              أن نصبح الخيار الأول والأموثق للعملاء في تحقيق نموهم على وسائل التواصل الاجتماعي من خلال الخدمات المبتكرة والدعم الاستثنائي 24/7.
             </p>
           </div>
         </div>
